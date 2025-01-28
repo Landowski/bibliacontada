@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bíblia Contada - A bíblia online em forma de história</title>
+    <link rel="preload" href="estilo.css" as="style">
+    <link rel="stylesheet" href="estilo.css">
+    <meta property="og:title" content="Bíblia Contada em História">
+    <meta property="og:description" content="Explore a Bíblia de forma única com a Bíblia Contada: a Bíblia online transformada em histórias envolventes. Aprenda, entenda e inspire-se com cada capítulo!">
+    <meta property="og:url" content="https://bibliacontada.com">
+    <meta property="og:image" content="imagens/og-compartilhar.png">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://bibliacontada.com">
+    <link rel="icon" href="imagens/logo.png" sizes="48x48" type="image/png">
+    <link rel="apple-touch-icon" href="imagens/logo.png">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Bíblia Contada em História",
+            "url": "https://bibliacontada.com",
+            "description": "Explore a Bíblia de forma única com a Bíblia Contada: a Bíblia online transformada em histórias envolventes. Aprenda, entenda e inspire-se com cada capítulo!"
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="/">
+                <div class="logo">
+                    <img src="imagens/logo.png" width="32" height="32" alt="Imagem de uma bíblia."/>
+                    <span>Bíblia Contada</span>
+                </div>
+            </a>
+            <button class="toggle-btn" id="theme-toggle" aria-label="Toggle dark/light mode">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 3.34a10 10 0 1 1 -15 8.66l.005 -.324a10 10 0 0 1 14.995 -8.336m-9 1.732a8 8 0 0 0 4.001 14.928l-.001 -16a8 8 0 0 0 -4 1.072" /></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="content">
+
+        <div class="escolha">
+            <span class="escolha-titulo">Escolha abaixo como quer começar</span>
+
+            <div class="escolha-colunas">
+                <div class="coluna" id="marcador">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M6 4h11a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-11a1 1 0 0 1 -1 -1v-14a1 1 0 0 1 1 -1m3 0v18" /><path d="M13 8l2 0" /><path d="M13 12l2 0" /></svg>
+                    Continuar de onde parei ou iniciar
+                </div>
+
+                <div class="coluna">
+                    <select id="testamento" onchange="window.location.href=this.value;">
+                        <option value="">Selecione o livro</option>
+
+                        <!-- Antigo Testamento -->
+                        <optgroup label="ANTIGO TESTAMENTO">
+                            <option value="genesis">Gênesis</option>
+                            <option value="exodo">Êxodo</option>
+                            <option value="levitico">Levítico</option>
+                            <option value="numeros">Números</option>
+                            <option value="deuteronomio">Deuteronômio</option>
+                            <option value="josue">Josué</option>
+                            <option value="juizes">Juízes</option>
+                            <option value="rute">Rute</option>
+                            <option value="1-samuel">1 Samuel</option>
+                            <option value="2-samuel">2 Samuel</option>
+                            <option value="1-reis">1 Reis</option>
+                            <option value="2-reis">2 Reis</option>
+                            <option value="1-cronicas">1 Crônicas</option>
+                            <option value="2-cronicas">2 Crônicas</option>
+                            <option value="esdras">Esdras</option>
+                            <option value="neemias">Neemias</option>
+                            <option value="ester">Ester</option>
+                            <option value="jo">Jó</option>
+                            <option value="salmos">Salmos</option>
+                            <option value="proverbios">Provérbios</option>
+                            <option value="eclesiastes">Eclesiastes</option>
+                            <option value="canticos">Cânticos</option>
+                            <option value="isaias">Isaías</option>
+                            <option value="jeremias">Jeremias</option>
+                            <option value="lamentacoes">Lamentações</option>
+                            <option value="ezequiel">Ezequiel</option>
+                            <option value="daniel">Daniel</option>
+                            <option value="oseias">Oséias</option>
+                            <option value="joel">Joel</option>
+                            <option value="amos">Amós</option>
+                            <option value="obadias">Obadias</option>
+                            <option value="jonas">Jonas</option>
+                            <option value="miqueias">Miquéias</option>
+                            <option value="naum">Naum</option>
+                            <option value="habacuque">Habacuque</option>
+                            <option value="sofonias">Sofonias</option>
+                            <option value="ageu">Ageu</option>
+                            <option value="zacarias">Zacarias</option>
+                            <option value="malaquias">Malaquias</option>
+                        </optgroup>
+
+                        <!-- Novo Testamento -->
+                        <optgroup label="NOVO TESTAMENTO">
+                            <option value="mateus">Mateus</option>
+                            <option value="marcos">Marcos</option>
+                            <option value="lucas">Lucas</option>
+                            <option value="joao">João</option>
+                            <option value="atos">Atos</option>
+                            <option value="romanos">Romanos</option>
+                            <option value="1-corintios">1 Coríntios</option>
+                            <option value="2-corintios">2 Coríntios</option>
+                            <option value="galatas">Gálatas</option>
+                            <option value="efesios">Efésios</option>
+                            <option value="filipenses">Filipenses</option>
+                            <option value="colossenses">Colossenses</option>
+                            <option value="1-tessalonicenses">1 Tessalonicenses</option>
+                            <option value="2-tessalonicenses">2 Tessalonicenses</option>
+                            <option value="1-timoteo">1 Timóteo</option>
+                            <option value="2-timoteo">2 Timóteo</option>
+                            <option value="tito">Tito</option>
+                            <option value="filemom">Filemom</option>
+                            <option value="hebreus">Hebreus</option>
+                            <option value="tiago">Tiago</option>
+                            <option value="1-pedro">1 Pedro</option>
+                            <option value="2-pedro">2 Pedro</option>
+                            <option value="1-joao">1 João</option>
+                            <option value="2-joao">2 João</option>
+                            <option value="3-joao">3 João</option>
+                            <option value="judas">Judas</option>
+                            <option value="apocalipse">Apocalipse</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <h1>Bíblia Contada: Conheça a Forma Mais Dinâmica de Explorar as Escrituras</h1>
+
+        <p>A Bíblia é, sem dúvidas, o livro mais influente de todos os tempos. Sua mensagem atravessa séculos, culturas e idiomas, oferecendo sabedoria, conforto e ensinamentos valiosos para milhões de pessoas ao redor do mundo. Mas vamos ser sinceros: apesar de sua riqueza espiritual, muitos de nós já nos sentimos um pouco intimidados ao encarar capítulos densos ou passagens desafiadoras. Foi pensando nisso que nasceu a <strong>Bíblia Contada online</strong>, uma maneira leve, prática e envolvente de mergulhar nas Escrituras.</p>
+
+        <p>Vamos explorar o que é a Bíblia Contada, por que ela pode transformar sua experiência com a Palavra e como ela se diferencia de outras formas de estudo bíblico.</p>
+
+        <hr>
+
+        <h2>O Que é a Bíblia Contada Online?</h2>
+
+        <p>A <strong>Bíblia Contada</strong> é uma plataforma inovadora que traz uma abordagem única: resumos narrativos dos capítulos bíblicos, escritos como se fossem histórias. Baseada na versão Almeida Revista e Atualizada (ARA), os capítulos são traduzidos em textos fluidos e acessíveis, mantendo o foco na essência das mensagens originais.</p>
+
+        <p>Imagine poder navegar pela Bíblia como se estivesse lendo um livro de histórias, onde cada capítulo ganha vida com uma linguagem simples, direta e encantadora. É a Palavra de Deus, mas com uma abordagem que facilita a compreensão, especialmente para quem sente dificuldade em acompanhar textos mais longos ou arcaicos.</p>
+
+        <hr>
+
+        <h2>Por Que Criar a Bíblia Contada?</h2>
+
+        <p>A ideia da Bíblia Contada nasceu de um desejo: <strong>tornar o estudo das Escrituras mais acessível a todos</strong>, sem abrir mão da profundidade. Para muitos, a Bíblia pode parecer um desafio. Afinal, sua linguagem, culturalmente rica e cheia de nuances, pode ser difícil de entender em certos momentos. Por isso, uma ferramenta que ofereça resumos narrativos permite que mais pessoas se conectem com as mensagens centrais de cada capítulo.</p>
+
+        <p>Além disso, o formato dinâmico da Bíblia Contada também é perfeito para quem tem uma rotina corrida. Não importa se você tem cinco minutos ou uma hora: aqui você encontra conteúdo que cabe no seu dia, mas que ainda toca seu coração e inspira sua caminhada.</p>
+
+        <hr>
+
+        <h2>Benefícios da Bíblia Contada</h2>
+
+        <p>Você pode estar se perguntando: <em>por que devo usar a Bíblia Contada online ao invés de simplesmente ler o texto original?</em> A resposta está nos benefícios que esta plataforma oferece:</p>
+
+        <h3>1. <strong>Clareza e Compreensão</strong></h3>
+        <p>Cada resumo é pensado para simplificar, mas não reduzir. A ideia é apresentar o conteúdo de forma clara, para que até mesmo leitores iniciantes possam compreender as passagens mais complexas.</p>
+
+        <h3>2. <strong>Facilidade de Navegação</strong></h3>
+        <p>Com uma interface intuitiva, você pode ir direto ao capítulo que deseja explorar. Além disso, os resumos ajudam a contextualizar rapidamente a mensagem, conectando um capítulo ao próximo.</p>
+
+        <h3>3. <strong>Uma Nova Perspectiva</strong></h3>
+        <p>Por meio da narrativa, você passa a enxergar a Bíblia com novos olhos. Ao ler os capítulos como histórias, o texto ganha dinamismo e se torna mais envolvente.</p>
+
+        <h3>4. <strong>Ideal para Reflexões Rápidas</strong></h3>
+        <p>Seja para seu devocional diário, seja para preparar um estudo ou uma reflexão, os resumos fornecem insights rápidos que podem ser usados no dia a dia.</p>
+
+        <hr>
+
+        <h2>Para Quem é a Bíblia Contada?</h2>
+
+        <p>A Bíblia Contada online foi criada pensando em diferentes perfis de leitores. Aqui estão alguns exemplos de quem pode se beneficiar:</p>
+
+        <ul>
+        <li><strong>Leitores Iniciantes</strong>: Se você está começando sua jornada com a Bíblia, os resumos oferecem um ponto de partida ideal.</li>
+        <li><strong>Estudantes da Palavra</strong>: Quem já conhece a Bíblia, mas deseja revisar capítulos ou ganhar novas perspectivas.</li>
+        <li><strong>Pessoas Ocupadas</strong>: Se sua agenda é cheia, a Bíblia Contada oferece conteúdo rápido e de fácil digestão.</li>
+        <li><strong>Pais e Professores</strong>: Ideal para compartilhar histórias bíblicas com crianças e alunos de forma didática e atraente.</li>
+        </ul>
+
+        <hr>
+
+        <h2>Como Funciona?</h2>
+
+        <p>O site Bíblia Contada online foi projetado para ser simples e funcional. Basta acessar a página inicial e escolher o livro ou capítulo que você deseja explorar. Cada capítulo tem um resumo, escrito de forma a preservar a essência do texto bíblico, mas com uma linguagem mais moderna e narrativa.</p>
+
+        <p>Além disso, temos ferramentas para melhorar sua experiência online: você pode escolher o tema noturno (para não forçar tanto a vista) e também a sua navegação pelas páginas da Bíblia Contada fica salva automaticamente, possibilitando retomá-la com um simples clique no botão no início desta página.</p>
+
+        <hr>
+
+        <h2>A Transformação Começa Aqui</h2>
+
+        <p>A <strong>Bíblia Contada</strong> não veio para substituir a leitura da Bíblia original, mas sim para complementá-la. É uma ponte que conecta você às Escrituras de forma mais fluida e prática, sem abrir mão da profundidade espiritual. Se você já teve dificuldades para entender certas passagens ou sentiu que faltava tempo para mergulhar na Palavra, esta é sua oportunidade de mudar isso.</p>
+
+        <p>Que tal experimentar? Navegue pelo site, escolha um capítulo e deixe-se envolver pela história. Afinal, cada palavra da Bíblia é uma mensagem divina, e agora você tem a chance de vivenciá-la como nunca antes.</p>
+
+        <p>Venha conhecer a Bíblia Contada online e transforme sua experiência com a Palavra de Deus. <strong>A jornada começa agora.</strong></p>
+
+    </main>
+
+    <footer class="footer">
+            <a href="termos-uso">Termos de Uso</a>
+            <a href="politica-privacidade">Política de Privacidade</a>
+            <a href="sobre">Sobre</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
