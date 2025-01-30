@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+    <link rel="preload" href="/estilo.css" as="style">
+    <link rel="stylesheet" href="/estilo.css">
+    <meta name="description" content="{{ page.description }}">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.description }}">
+    <meta property="og:url" content="{{ site.url }}">
+    <meta property="og:image" content="/imagens/og-compartilhar.png">
+    <meta property="og:type" content="website">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <link rel="icon" href="/imagens/logo.png" sizes="48x48" type="image/png">
+    <link rel="apple-touch-icon" href="/imagens/logo.png">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "{{ page.title }}",
+            "url": "{{ site.url }}{{ page.url }}",
+            "description": "{{ page.description }}"
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="/">
+                <div class="logo">
+                    <img src="/imagens/logo.png" width="32" height="32" alt="Imagem de uma bíblia."/>
+                    <span>Bíblia Contada</span>
+                </div>
+            </a>
+            <button class="toggle-btn" id="theme-toggle" aria-label="Toggle dark/light mode">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 3.34a10 10 0 1 1 -15 8.66l.005 -.324a10 10 0 0 1 14.995 -8.336m-9 1.732a8 8 0 0 0 4.001 14.928l-.001 -16a8 8 0 0 0 -4 1.072" /></svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="content">
+
+        {{ content }}
+
+    </main>
+
+    <footer class="footer">
+            <a href="/">Início</a>
+            <a href="/termos-uso">Termos de Uso</a>
+            <a href="/politica-privacidade">Política de Privacidade</a>
+            <a href="/sobre">Sobre</a>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
